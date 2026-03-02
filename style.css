@@ -19,3 +19,13 @@ button {
   width: 100%;
   height: auto;
 }
+#your-room-container {
+  position: relative; /* This makes it the anchor for the buttons! */
+  width: 100%;        /* Keeps it responsive as we discussed */
+  max-width: 800px;   /* Or your preferred size */
+}
+
+.room-button {
+  position: absolute; /* This lets us 'paste' it anywhere inside the container */
+  cursor: pointer;    /* Makes the mouse turn into a hand so users know to click */
+}
