@@ -29,3 +29,8 @@ button {
   position: absolute; /* This lets us 'paste' it anywhere inside the container */
   cursor: pointer;    /* Makes the mouse turn into a hand so users know to click */
 }
+#key-button {
+  width: 150px; /* Adjust this number to make the button smaller or larger */
+  top: 40%;     /* Moves it 40% down from the top of the container */
+  left: 30%;    /* Moves it 30% from the left of the container */
+}
