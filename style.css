@@ -11,6 +11,7 @@ body {
 }
 
 #your-room-container {
+<<<<<<< HEAD
   position: relative; 
   width: 100%;
   max-width: 800px; /* Adjust based on your image size */
@@ -29,6 +30,20 @@ body {
   padding: 12px 24px;
   font-size: 18px;
   cursor: pointer;
+=======
+  position: relative; /* This makes it the anchor for the buttons! */
+  width: 100%;        /* Keeps it responsive as we discussed */
+}
+
+.room-button {
+  position: absolute; /* This lets us 'paste' it anywhere inside the container */
+  cursor: pointer;    /* Makes the mouse turn into a hand so users know to click */
+}
+#start-button {
+  width: 180px; /* Adjust this number to make the button smaller or larger */
+  top: 73%;     /* Moves it 40% down from the top of the container */
+  left: 70%;    /* Moves it 30% from the left of the container */
+>>>>>>> 1b14560 (Made background to full screen)
 }
 
 #how-to-btn {
