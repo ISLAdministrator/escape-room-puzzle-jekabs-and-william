@@ -1,49 +1,36 @@
-/*
-This is a CSS comment :) Text just for humans, it is not part of the code
-Below is basic CSS styling.
-You can change it, add to it, or delete it.
-*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* This is vital for full screen! */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-button {
-  padding: 10px;
-  font-size: 16px;
-}
-#main-background {
-  width: 100%;
-  height: auto;
-}
 #your-room-container {
-  position: relative; /* This makes it the anchor for the buttons! */
-  width: 100%;        /* Keeps it responsive as we discussed */
-  max-width: 800px;   /* Or your preferred size */
+  position: relative; 
+  width: 100%;
+  max-width: 800px; /* Adjust based on your image size */
+}
+
+#main-bg {
+  width: 100%;
+  display: block;
 }
 
 .room-button {
-  position: absolute; /* This lets us 'paste' it anywhere inside the container */
-  cursor: pointer;    /* Makes the mouse turn into a hand so users know to click */
+  position: absolute;
+  bottom: 10%; /* 10% up from the bottom of the container */
+  left: 52.75%;
+  transform: translateX(-50%); /* Centers the button perfectly */
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
 }
-#key-button {
-  width: 150px; /* Adjust this number to make the button smaller or larger */
-  top: 40%;     /* Moves it 40% down from the top of the container */
-  left: 30%;    /* Moves it 30% from the left of the container */
-}
-body {
-  /* Replace 'your-image.jpg' with your actual file name */
-  background-image: url('your-image.jpg');
 
-  /* This centers the image */
-  background-position: center;
-
-  /* This prevents the image from repeating/tiling */
-  background-repeat: no-repeat;
-
-  /* This is the magic line: it forces the image to cover the whole screen */
-  background-size: cover;
-
-  /* This keeps the background still when you scroll down */
-  background-attachment: fixed;
-
-  /* Optional: height ensures it fills the viewport even if there's no content */
-  min-height: 100vh;
-  margin: 0;
+#how-to-btn {
+  margin-left: 100px;
 }
