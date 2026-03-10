@@ -41,3 +41,25 @@ html, body {
   left: 70%;    
   transform: translate(-50%, -50%);
 }
+
+#next-button {
+  width: 12%; 
+  top: 80%;    /* Adjust these percentages to fit the new background */
+  left: 50%;    
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+#user-input {
+  position: absolute;
+  top: 80%;         /* Adjust these percentages to fit your background design */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid #ff0000; /* Optional: adds a red border to match your theme */
+  background-color: rgba(235, 235, 235, 0.7); /* Semi-transparent black */
+  color: white;
+  z-index: 20;      /* Ensures it stays on top of the image */
+  width: 250px;
+}
