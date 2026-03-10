@@ -1,50 +1,46 @@
-body {
-  margin: 0;
-  padding: 0;
+/* 1. Force the browser to use every pixel available */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
   background-color: #111;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  min-height: 100vh; /* This is vital for full screen! */
+  overflow: hidden;
+  display: block; /* Changing from flex to block for a moment to test */
+}
+
+/* 2. Make the container fill the screen and center its contents */
+#your-room-container {
+  position: relative;
+  width: 100vw !important;
+  height: 100vh !important;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
-#your-room-container {
-<<<<<<< HEAD
-  position: relative; 
-  width: 100%;
-  max-width: 800px; /* Adjust based on your image size */
-}
-
+/* 3. Force the image to ignore its 'natural' size and fill the container */
 #main-bg {
-  width: 100%;
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: fill; /* This will stretch it to every corner regardless of ratio */
+  z-index: 1;    /* Keeps background behind the button */
 }
 
+/* 4. Ensure the button stays on top of the background */
 .room-button {
   position: absolute;
-  bottom: 10%; /* 10% up from the bottom of the container */
-  left: 52.75%;
-  transform: translateX(-50%); /* Centers the button perfectly */
-  padding: 12px 24px;
-  font-size: 18px;
+  z-index: 10;   /* Brings the button to the front */
   cursor: pointer;
-=======
-  position: relative; /* This makes it the anchor for the buttons! */
-  width: 100%;        /* Keeps it responsive as we discussed */
 }
 
-.room-button {
-  position: absolute; /* This lets us 'paste' it anywhere inside the container */
-  cursor: pointer;    /* Makes the mouse turn into a hand so users know to click */
-}
 #key-button {
-  width: 100px; /* Adjust this number to make the button smaller or larger */
-  top: 73%;     /* Moves it 40% down from the top of the container */
-  left: 70%;    /* Moves it 30% from the left of the container */
-}
-
-#how-to-btn {
-  margin-left: 100px;
+  width: 15%;    /* Use % so it scales with the screen */
+  top: 73%;
+  left: 70%;
+  transform: translate(-50%, -50%);
 }
