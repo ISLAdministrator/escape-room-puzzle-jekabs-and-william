@@ -39,11 +39,10 @@ body {
   position: absolute; /* This lets us 'paste' it anywhere inside the container */
   cursor: pointer;    /* Makes the mouse turn into a hand so users know to click */
 }
-#start-button {
-  width: 180px; /* Adjust this number to make the button smaller or larger */
+#key-button {
+  width: 100px; /* Adjust this number to make the button smaller or larger */
   top: 73%;     /* Moves it 40% down from the top of the container */
   left: 70%;    /* Moves it 30% from the left of the container */
->>>>>>> 1b14560 (Made background to full screen)
 }
 
 #how-to-btn {
