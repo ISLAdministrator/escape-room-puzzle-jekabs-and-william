@@ -43,11 +43,12 @@ html, body {
 }
 
 #next-button {
-  width: 12%; 
-  top: 80%;    /* Adjust these percentages to fit the new background */
-  left: 50%;    
+  width: 12%;          /* Matches the 12% width of your first button */
+  top: 82%;            /* Adjusted to match the position of the first button */
+  left: 70%;           /* Adjusted to match the position of the first button */
   transform: translate(-50%, -50%);
   z-index: 10;
+  cursor: pointer;
 }
 
 #user-input {
