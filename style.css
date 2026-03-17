@@ -21,9 +21,8 @@ html, body {
 }
 
 #main-bg {
-  max-width: 100%;
-  max-height: 100%;
-  /* 'contain' is the key: it preserves aspect ratio and adds bars if needed */
+  width: 100%;
+  height: 100%;
   object-fit: contain; 
   display: block;
 }
@@ -34,19 +33,23 @@ html, body {
   z-index: 10;
 }
 
-#key-button {
-  /* Using % for width keeps the button scaling with the background image */
+#key-button, #next-button {
   width: 12%; 
-  top: 82%;     /* Adjust these if the button moved slightly */
-  left: 70%;    
+  top: 82%;    
+  left: 70%;  
   transform: translate(-50%, -50%);
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
 }
 
-#next-button {
+#victory-btn {
   width: 12%; 
-  top: 80%;    /* Adjust these percentages to fit the new background */
-  left: 50%;    
+  top: 82%;    
+  left: 70%;  
   transform: translate(-50%, -50%);
+  position: absolute;
+  cursor: pointer;
   z-index: 10;
 }
 
@@ -62,4 +65,18 @@ html, body {
   color: white;
   z-index: 20;      /* Ensures it stays on top of the image */
   width: 250px;
+}
+
+#output {
+  position: absolute;
+  top: 88%;         /* Placed just below the input box */
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 30;      /* Ensure it sits on top of everything */
+  margin: 0;
+  text-align: center;
+  width: 100%;      /* Centers the text within the screen width */
 }
