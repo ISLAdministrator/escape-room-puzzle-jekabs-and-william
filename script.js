@@ -46,5 +46,5 @@ userInput.addEventListener("keypress", function (e) {
 
 // 5. Final Button: Redirect to ISL
 victoryButton.addEventListener("click", function() {
-  window.location.href = "https://isl.edu.lv"; 
+  window.location.href = "https://isladministrator.github.io/escape-room-puzzle-elias-stan/"; 
 });
