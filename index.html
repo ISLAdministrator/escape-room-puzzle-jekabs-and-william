@@ -9,23 +9,36 @@ DO NOT let AI code for you!!
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Escape Room</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <h1>Escape Room</h1>
+  <body>
 
-  <p>
-    Write the story of your escape room here.
-  </p>
+    <div id="your-room-container">
+      <img id="main-bg" src="1introduction background.jpg" alt="Room Background">
 
-  <button id="button">Click me</button>
+      <img class="room-button" id="key-button" src="2how to play button.jpg">
+      <img class="room-button" id="next-button" src="5click this button to play.jpg" style="display: none;">
 
+      <img class="room-button" id="victory-btn" src="8click this button to move on button.jpg" style="display: none;">
+
+      <input type="text" id="user-input" placeholder="Enter the code..." style="display: none;">
+      <p id="output"></p>
+    </div>
+
+    <p id="output"></p>
+
+    <script src="script.js"></script>
+  </body>
   <p id="output"></p>
 
   <script src="script.js"></script>
 </body>
+
 </html>

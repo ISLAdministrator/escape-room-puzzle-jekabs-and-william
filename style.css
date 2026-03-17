@@ -1,17 +1,82 @@
-/*
-This is a CSS comment :) Text just for humans, it is not part of the code
-Below is basic CSS styling.
-You can change it, add to it, or delete it.
-*/
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #111;
-  color: white;
-  padding: 20px;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111; /* This creates the "black space" behind the image */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-button {
+#your-room-container {
+  position: relative;
+  /* These ensure the container takes up the full screen space */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  display: block;
+}
+
+.room-button {
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#key-button, #next-button {
+  width: 12%; 
+  top: 82%;    
+  left: 70%;  
+  transform: translate(-50%, -50%);
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#victory-btn {
+  width: 12%; 
+  top: 82%;    
+  left: 70%;  
+  transform: translate(-50%, -50%);
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#user-input {
+  position: absolute;
+  top: 80%;         /* Adjust these percentages to fit your background design */
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 10px;
-  font-size: 16px;
+  font-size: 20px;
+  border: 2px solid #ff0000; /* Optional: adds a red border to match your theme */
+  background-color: rgba(235, 235, 235, 0.7); /* Semi-transparent black */
+  color: white;
+  z-index: 20;      /* Ensures it stays on top of the image */
+  width: 250px;
+}
+
+#output {
+  position: absolute;
+  top: 88%;         /* Placed just below the input box */
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 30;      /* Ensure it sits on top of everything */
+  margin: 0;
+  text-align: center;
+  width: 100%;      /* Centers the text within the screen width */
 }
